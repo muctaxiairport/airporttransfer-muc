@@ -11,7 +11,7 @@ const { t } = Astro.props;
 const whatsappUrl = `https://wa.me/${siteConfig.whatsapp.number}?text=${encodeURIComponent(t.whatsapp.message)}`;
 ---
 
-<section id="hero" class="relative min-h-screen flex items-center bg-dark pt-16">
+<section id="hero" class="relative min-h-screen flex items-center bg-dark pt-16 pt-[calc(4rem+env(safe-area-inset-top))]">
   <!-- Background image -->
   <div class="absolute inset-0">
     <img src="/Hero.png" alt="" class="h-full w-full object-cover" />

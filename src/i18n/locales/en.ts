@@ -14,6 +14,7 @@ export const en: Translations = {
     menuOpen: "Open menu",
     whatsapp: "WhatsApp",
     directCall: "Or call directly",
+    chooseLanguage: "Choose language",
   },
   footer: {
     allRightsReserved: "All rights reserved.",

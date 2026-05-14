@@ -8,6 +8,7 @@ export interface Translations {
     menuOpen: string;
     whatsapp: string;
     directCall: string;
+    chooseLanguage: string;
   };
   footer: {
     allRightsReserved: string;
