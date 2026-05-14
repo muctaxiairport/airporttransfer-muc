@@ -18,11 +18,18 @@ export interface Translations {
     tagline: string;
     headline: string;
     headlineHighlight: string;
+    headlineHighlightShort: string;
     description: string;
     ctaReserve: string;
     featureAirport: string;
     featureLongDistance: string;
     featureBusiness: string;
+    paymentFeatures: string[];
+    whatsappCta: string;
+    whatsappSubtitle: string;
+    paymentCardTitle: string;
+    paymentCardSubtitle: string;
+    trustItems: string[];
   };
   services: {
     tagline: string;

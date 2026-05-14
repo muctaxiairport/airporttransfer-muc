@@ -24,12 +24,23 @@ export const fr: Translations = {
     tagline: "Votre taxi à",
     headline: "Votre conductrice à",
     headlineHighlight: "En sécurité et à l'heure.",
+    headlineHighlightShort: "En sécurité à destination.",
     description:
       '<span class="bg-taxi-400 text-dark px-1 rounded">Transfert aéroport</span>, <span class="bg-taxi-400 text-dark px-1 rounded">trajet longue distance</span> ou <span class="bg-taxi-400 text-dark px-1 rounded">transport professionnel</span> — votre conductrice expérimentée vous emmène en toute sécurité et confort à destination.',
     ctaReserve: "Réserver maintenant",
     featureAirport: "Transferts aéroport",
     featureLongDistance: "Trajets longue distance",
     featureBusiness: "Transport professionnel",
+    paymentFeatures: [
+      "Paiement sans espèces – en toute sérénité.",
+      "Paiement sans contact disponible.",
+      "Nous acceptons toutes les cartes courantes & Apple Pay.",
+    ],
+    whatsappCta: "Réserver via WhatsApp",
+    whatsappSubtitle: "Réponse en quelques minutes",
+    paymentCardTitle: "Paiement par carte & Apple Pay",
+    paymentCardSubtitle: "Sans espèces • Sans contact • Sécurisé",
+    trustItems: ["Fiable", "Ponctuel", "Personnel"],
   },
   services: {
     tagline: "Nos services",

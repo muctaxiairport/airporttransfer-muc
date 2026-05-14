@@ -24,12 +24,23 @@ export const en: Translations = {
     tagline: "Your taxi in",
     headline: "Your driver in",
     headlineHighlight: "Safe & on time to your destination.",
+    headlineHighlightShort: "Safe to your destination.",
     description:
       'Whether <span class="bg-taxi-400 text-dark px-1 rounded">airport transfer</span>, <span class="bg-taxi-400 text-dark px-1 rounded">long-distance ride</span> or <span class="bg-taxi-400 text-dark px-1 rounded">business transport</span> — your experienced driver takes you safely and comfortably to your destination.',
     ctaReserve: "Book now",
     featureAirport: "Airport transfers",
     featureLongDistance: "Long-distance rides",
     featureBusiness: "Business transfer",
+    paymentFeatures: [
+      "Cashless payment – completely relaxed.",
+      "Contactless payment available.",
+      "We accept all common cards & Apple Pay.",
+    ],
+    whatsappCta: "Book via WhatsApp",
+    whatsappSubtitle: "Reply within minutes",
+    paymentCardTitle: "Card payment & Apple Pay available",
+    paymentCardSubtitle: "Cashless • Contactless • Secure",
+    trustItems: ["Reliable", "Punctual", "Personal"],
   },
   services: {
     tagline: "Our Services",
