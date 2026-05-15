@@ -13,7 +13,6 @@ const { t, defaultTo = "", id = "reservation-form" } = Astro.props;
 const whatsappNumber = siteConfig.whatsapp.number;
 
 const fieldLabels = JSON.stringify({
-  whatsappPrefix: t.form.whatsappPrefix,
   nameField: t.form.nameField,
   fromField: t.form.fromField,
   toField: t.form.toField,
@@ -22,6 +21,7 @@ const fieldLabels = JSON.stringify({
   phoneField: t.form.phoneField,
   emailField: t.form.emailField,
   passengersField: t.form.passengersField,
+  luggageField: t.form.luggageField,
   flightField: t.form.flightField,
   messageField: t.form.messageField,
   datePastError: t.form.datePastError,
@@ -98,6 +98,19 @@ const inputClass =
           class={inputClass}
         >
           {[1, 2, 3, 4].map((n) => (
+            <option value={n}>{n}</option>
+          ))}
+        </select>
+      </div>
+      <div>
+        <label for={`${id}-luggage`} class="block text-sm font-medium text-gray-700 mb-1">{t.form.luggageLabel}</label>
+        <select
+          id={`${id}-luggage`}
+          name="luggage"
+          required
+          class={inputClass}
+        >
+          {[0, 1, 2, 3, 4].map((n) => (
             <option value={n}>{n}</option>
           ))}
         </select>
@@ -326,23 +339,41 @@ const inputClass =
     const lines = [
       labels.whatsappGreeting,
       "",
-      `${labels.nameField}: ${data.get("name")}`,
-      `${labels.fromField}: ${data.get("from")}${fromLink ? `\n📍 ${fromLink}` : ""}`,
-      `${labels.toField}: ${data.get("to")}${toLink ? `\n📍 ${toLink}` : ""}`,
-      `${labels.dateField}: ${formattedDate}`,
-      `${labels.timeField}: ${data.get("time")}`,
-      `${labels.passengersField}: ${data.get("passengers")}`,
-      `${labels.phoneField}: ${data.get("phone")}`,
+      `📍 ${labels.fromField}:`,
+      data.get("from"),
     ];
+    if (fromLink) lines.push(fromLink);
 
-    const email = data.get("email");
-    if (email) lines.push(`${labels.emailField}: ${email}`);
+    lines.push(
+      "",
+      `📍 ${labels.toField}:`,
+      data.get("to"),
+    );
+    if (toLink) lines.push(toLink);
+
+    lines.push(
+      "",
+      `📅 ${labels.dateField}: ${formattedDate}`,
+      `⏰ ${labels.timeField}: ${data.get("time")}`,
+      "",
+      `👤 ${labels.passengersField}: ${data.get("passengers")}`,
+      `🧳 ${labels.luggageField}: ${data.get("luggage")}`,
+    );
 
     const flight = data.get("flight");
-    if (flight) lines.push(`${labels.flightField}: ${flight}`);
+    if (flight) lines.push("", `✈️ ${labels.flightField}: ${flight}`);
+
+    lines.push(
+      "",
+      `👤 ${labels.nameField}: ${data.get("name")}`,
+      `📞 ${labels.phoneField}: ${data.get("phone")}`,
+    );
+
+    const email = data.get("email");
+    if (email) lines.push(`📧 ${labels.emailField}: ${email}`);
 
     const message = data.get("message");
-    if (message) lines.push(`${labels.messageField}: ${message}`);
+    if (message) lines.push("", `💬 ${labels.messageField}: ${message}`);
 
     lines.push("", labels.whatsappClosing);
 

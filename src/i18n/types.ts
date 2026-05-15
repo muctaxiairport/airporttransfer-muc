@@ -63,6 +63,7 @@ export interface Translations {
     emailPlaceholder: string;
     passengersLabel: string;
     passengersPlaceholder: string;
+    luggageLabel: string;
     flightLabel: string;
     flightPlaceholder: string;
     messageLabel: string;
@@ -77,6 +78,7 @@ export interface Translations {
     phoneField: string;
     emailField: string;
     passengersField: string;
+    luggageField: string;
     flightField: string;
     messageField: string;
     datePastError: string;
