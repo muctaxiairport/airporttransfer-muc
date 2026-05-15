@@ -64,7 +64,7 @@ const { overallRating, totalReviews, googleMapsUrl, reviews } = reviewsConfig;
           style="scrollbar-width: none; -ms-overflow-style: none;"
         >
           {reviews.map((review) => (
-            <div class="flex-shrink-0 w-64 sm:w-72 snap-start rounded-xl bg-white border border-gray-200 p-5">
+            <div class="flex-shrink-0 w-[calc(100%-2rem)] sm:w-72 snap-center sm:snap-start rounded-xl bg-white border border-gray-200 p-5">
               <div class="flex items-center gap-3 mb-3">
                 <!-- Avatar -->
                 {review.initial ? (
@@ -149,7 +149,10 @@ const { overallRating, totalReviews, googleMapsUrl, reviews } = reviewsConfig;
   const nextBtn = document.getElementById("reviews-next") as HTMLButtonElement | null;
 
   if (carousel && prevBtn && nextBtn) {
-    const scrollAmount = 288;
+    function getScrollAmount() {
+      const card = carousel!.querySelector<HTMLElement>(":scope > div");
+      return card ? card.offsetWidth + 16 : 288;
+    }
 
     function updateArrows() {
       if (!carousel || !prevBtn || !nextBtn) return;
@@ -160,11 +163,11 @@ const { overallRating, totalReviews, googleMapsUrl, reviews } = reviewsConfig;
     }
 
     nextBtn.addEventListener("click", () => {
-      carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
+      carousel.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
     });
 
     prevBtn.addEventListener("click", () => {
-      carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
+      carousel.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
     });
 
     carousel.addEventListener("scroll", updateArrows);
