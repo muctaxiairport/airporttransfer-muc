@@ -277,7 +277,7 @@ const inputClass =
         countryOrder: ["de", "at", "ch", "tr"],
         separateDialCode: true,
         countrySearch: true,
-        loadUtilsOnInit: () => import("intl-tel-input/utils"),
+        loadUtils: () => import("intl-tel-input/utils"),
       });
 
       phoneInput.addEventListener("input", () => {
