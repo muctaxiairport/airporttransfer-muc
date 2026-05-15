@@ -3,7 +3,7 @@ export const siteConfig = {
   url: "https://taxi-service.de",
   phone: "+4917630576513",
   phoneDisplay: "+49 176 30576513",
-  email: "info@taxi-service.de",
+  email: "info@airporttransfer-muc.de",
   address: {
     street: "Hans-Stützle-Str. 6",
     zip: "81249",

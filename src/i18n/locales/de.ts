@@ -54,22 +54,22 @@ export const de: Translations = {
       {
         title: "Flughafentransfer",
         description:
-          "Pünktliche Abholung und Lieferung zum Flughafen. Wir überwachen Ihren Flugstatus und passen die Abholzeit bei Bedarf an.",
+          "Zuverlässiger Flughafentransfer München und Munich Airport Taxi Service. Wir überwachen Ihren Flugstatus und passen die Abholzeit bei Bedarf an.",
       },
       {
         title: "Ihre Fahrerin",
         description:
-          "Als erfahrene Taxifahrerin kenne ich mich bestens in der Region aus und bringe Sie sicher ans Ziel.",
+          "Als erfahrene Taxifahrerin biete ich zuverlässige und sichere Fahrten in München und Umgebung – ob Flughafen oder Langstrecke.",
       },
       {
         title: "Business-Transport",
         description:
-          "Professioneller Fahrservice für Geschäftskunden. Diskretion, Pünktlichkeit und erstklassiger Komfort garantiert.",
+          "Premium Airport Transfer Munich für Geschäftsreisende und internationale Gäste.",
       },
       {
         title: "Langstreckenfahrten",
         description:
-          "Komfortabel über lange Distanzen. Ob Geschäftsreise oder Privatfahrt — wir bringen Sie sicher und entspannt ans Ziel.",
+          "Komfortable und entspannte Langstreckenfahrten für Geschäftsreisen oder Privatfahrten – deutschlandweit, sicher und flexibel.",
       },
     ],
   },
@@ -77,7 +77,7 @@ export const de: Translations = {
     tagline: "Reservierung",
     title: "Fahrt reservieren",
     description:
-      "Buchen Sie Ihre Fahrt bequem online — wir melden uns umgehend bei Ihnen.",
+      "Sicher, pünktlich und entspannt ans Ziel.",
   },
   form: {
     groupRide: "Fahrtdetails",
