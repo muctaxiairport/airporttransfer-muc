@@ -22,12 +22,14 @@ export const fr: Translations = {
     allRightsReserved: "Tous droits réservés.",
     impressum: "Mentions légales",
     datenschutz: "Politique de confidentialité",
+    madeBy: "conçu et développé par",
   },
   hero: {
     tagline: "Votre taxi à",
     headline: "Votre conductrice à",
     headlineHighlight: "En sécurité et à l'heure.",
     headlineHighlightShort: "En sécurité à destination.",
+    mobileSubtitle: "Transferts aéroport sûrs à Munich",
     description:
       '<span class="bg-taxi-400 text-dark px-1 rounded">Transfert aéroport</span>, <span class="bg-taxi-400 text-dark px-1 rounded">trajet longue distance</span> ou <span class="bg-taxi-400 text-dark px-1 rounded">transport professionnel</span> — votre conductrice expérimentée vous emmène en toute sécurité et confort à destination.',
     ctaReserve: "Réserver maintenant",
@@ -43,6 +45,7 @@ export const fr: Translations = {
     whatsappSubtitle: "Réponse en quelques minutes",
     paymentCardTitle: "Paiement par carte & Apple Pay",
     paymentCardSubtitle: "Sans espèces • Sans contact • Sécurisé",
+    cashLabel: "ESPÈCES",
     trustItems: ["Fiable", "Ponctuel", "Personnel"],
   },
   services: {
@@ -103,6 +106,7 @@ export const fr: Translations = {
     messageLabel: "Message / demandes spéciales (facultatif)",
     messagePlaceholder: "ex. siège enfant nécessaire, beaucoup de bagages...",
     submit: "Réserver le trajet",
+    tariffNote: "Les courses sont facturées selon les tarifs officiels des taxis.",
     whatsappPrefix: "Nouvelle réservation :",
     nameField: "Nom",
     fromField: "Départ",

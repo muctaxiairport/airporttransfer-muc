@@ -22,12 +22,14 @@ export const en: Translations = {
     allRightsReserved: "All rights reserved.",
     impressum: "Legal Notice",
     datenschutz: "Privacy Policy",
+    madeBy: "designed and developed by",
   },
   hero: {
     tagline: "Your taxi in",
     headline: "Your driver in",
     headlineHighlight: "Safe & on time to your destination.",
     headlineHighlightShort: "Safe to your destination.",
+    mobileSubtitle: "Safe Airport Transfers in Munich",
     description:
       'Whether <span class="bg-taxi-400 text-dark px-1 rounded">airport transfer</span>, <span class="bg-taxi-400 text-dark px-1 rounded">long-distance ride</span> or <span class="bg-taxi-400 text-dark px-1 rounded">business transport</span> — your experienced driver takes you safely and comfortably to your destination.',
     ctaReserve: "Book now",
@@ -43,6 +45,7 @@ export const en: Translations = {
     whatsappSubtitle: "Reply within minutes",
     paymentCardTitle: "Card payment & Apple Pay available",
     paymentCardSubtitle: "Cashless • Contactless • Secure",
+    cashLabel: "CASH",
     trustItems: ["Reliable", "Punctual", "Personal"],
   },
   services: {
@@ -103,6 +106,7 @@ export const en: Translations = {
     messageLabel: "Message / Special Requests (optional)",
     messagePlaceholder: "e.g. child seat needed, extra luggage...",
     submit: "Book ride",
+    tariffNote: "Rides are charged according to official taxi tariffs.",
     whatsappPrefix: "New Reservation:",
     nameField: "Name",
     fromField: "Pickup",

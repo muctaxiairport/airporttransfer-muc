@@ -22,12 +22,14 @@ export const de: Translations = {
     allRightsReserved: "Alle Rechte vorbehalten.",
     impressum: "Impressum",
     datenschutz: "Datenschutz",
+    madeBy: "entwickelt von",
   },
   hero: {
     tagline: "Ihr Taxi in",
     headline: "Ihre Fahrerin in",
     headlineHighlight: "Sicher & pünktlich ans Ziel.",
     headlineHighlightShort: "Sicher ans Ziel.",
+    mobileSubtitle: "Sichere Flughafentransfers in München",
     description:
       'Ob <span class="bg-taxi-400 text-dark px-1 rounded">Flughafentransfer</span>, <span class="bg-taxi-400 text-dark px-1 rounded">Langstreckenfahrt</span> oder <span class="bg-taxi-400 text-dark px-1 rounded">Business-Transport</span> — Ihre erfahrene Fahrerin bringt Sie sicher und komfortabel ans Ziel.',
     ctaReserve: "Jetzt reservieren",
@@ -42,7 +44,8 @@ export const de: Translations = {
     whatsappCta: "Per WhatsApp buchen",
     whatsappSubtitle: "Antwort in wenigen Minuten",
     paymentCardTitle: "Kartenzahlung & Apple Pay möglich",
-    paymentCardSubtitle: "Bargeldlos • Kontaktlos • Sicher",
+    paymentCardSubtitle: "Bar & Karte • Kontaktlos • Sicher",
+    cashLabel: "BAR",
     trustItems: ["Zuverlässig", "Pünktlich", "Persönlich"],
   },
   services: {
@@ -103,6 +106,7 @@ export const de: Translations = {
     messageLabel: "Nachricht / besondere Wünsche (optional)",
     messagePlaceholder: "z.B. Kindersitz benötigt, viel Gepäck...",
     submit: "Fahrt reservieren",
+    tariffNote: "Die Fahrten werden gemäß offizieller Taxitarife berechnet.",
     whatsappPrefix: "Neue Reservierung:",
     nameField: "Name",
     fromField: "Abholort",

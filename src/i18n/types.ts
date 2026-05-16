@@ -16,12 +16,14 @@ export interface Translations {
     allRightsReserved: string;
     impressum: string;
     datenschutz: string;
+    madeBy: string;
   };
   hero: {
     tagline: string;
     headline: string;
     headlineHighlight: string;
     headlineHighlightShort: string;
+    mobileSubtitle: string;
     description: string;
     ctaReserve: string;
     featureAirport: string;
@@ -32,6 +34,7 @@ export interface Translations {
     whatsappSubtitle: string;
     paymentCardTitle: string;
     paymentCardSubtitle: string;
+    cashLabel: string;
     trustItems: string[];
   };
   services: {
@@ -69,6 +72,7 @@ export interface Translations {
     messageLabel: string;
     messagePlaceholder: string;
     submit: string;
+    tariffNote: string;
     whatsappPrefix: string;
     nameField: string;
     fromField: string;
